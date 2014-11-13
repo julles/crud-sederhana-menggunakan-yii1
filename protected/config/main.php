@@ -54,7 +54,7 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=dbs_resto_app',
+			'connectionString' => 'mysql:host=localhost;dbname=crud_sederhana_yii',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',

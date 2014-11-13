@@ -4,13 +4,13 @@ Navicat MySQL Data Transfer
 Source Server         : julian
 Source Server Version : 50532
 Source Host           : 127.0.0.1:3306
-Source Database       : dbs_resto_app
+Source Database       : crud_sederhana_yii
 
 Target Server Type    : MYSQL
 Target Server Version : 50532
 File Encoding         : 65001
 
-Date: 2014-11-13 22:48:31
+Date: 2014-11-14 00:48:59
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -43,23 +43,10 @@ CREATE TABLE `mas_user` (
   `role_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`nip`),
   KEY `role_id` (`role_id`),
-  CONSTRAINT `fk_user_to_role` FOREIGN KEY (`role_id`) REFERENCES `mas_role` (`id`) ON UPDATE CASCADE
+  CONSTRAINT `mas_user_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `mas_role` (`id`) ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of mas_user
 -- ----------------------------
-
--- ----------------------------
--- Table structure for `tes`
--- ----------------------------
-DROP TABLE IF EXISTS `tes`;
-CREATE TABLE `tes` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `tes` varchar(40) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- ----------------------------
--- Records of tes
--- ----------------------------
+INSERT INTO mas_user VALUES ('10902368', 'reza', 'reza', '61f07753e95277cd747a54aee059d3bd', '4');

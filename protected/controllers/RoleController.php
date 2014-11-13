@@ -19,7 +19,7 @@
 				
 				array('allow', 
 					'actions'=>array('create','update' , 'hapus','index'),
-					'users'=>array('*'),
+					'users'=>array('@'),
 				),
 				
 				array('deny',  // deny all users
