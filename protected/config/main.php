@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Resto App',
+	'name'=>'Crud Sederhana Dengan Yii1',
 	'language' => 'id',
 	// preloading 'log' component
 	'preload'=>array('log'),
