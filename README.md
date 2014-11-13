@@ -8,6 +8,8 @@ cara menggunakan
 3.sesuaikan config database di folder protected/main/config.php line 66
 <br/>
 username: reza
+<br/>
 password: adminadmin
+<br/>
 happy coding :)
 
